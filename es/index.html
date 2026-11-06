@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miaupesca: Pesca gatuna — Pesca relajante con gatos</title>
+<meta name="description" content="¡Pesca relajante con un gato pixelado! Atrapa 120 peces y llena tu Pecedex.">
+<meta property="og:title" content="Miaupesca: Pesca gatuna — Pesca relajante con gatos">
+<meta property="og:description" content="¡Pesca relajante con un gato pixelado! Atrapa 120 peces y llena tu Pecedex.">
+<meta property="og:image" content="https://dokgi88.github.io/purrfish/img/es/header.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6826563853">
+<link rel="icon" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<link rel="alternate" hreflang="en" href="https://dokgi88.github.io/purrfish/">
+<link rel="alternate" hreflang="ko" href="https://dokgi88.github.io/purrfish/ko/">
+<link rel="alternate" hreflang="ja" href="https://dokgi88.github.io/purrfish/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dokgi88.github.io/purrfish/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dokgi88.github.io/purrfish/zh-tw/">
+<link rel="alternate" hreflang="es" href="https://dokgi88.github.io/purrfish/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://dokgi88.github.io/purrfish/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://dokgi88.github.io/purrfish/fr/">
+<link rel="alternate" hreflang="de" href="https://dokgi88.github.io/purrfish/de/">
+<link rel="alternate" hreflang="it" href="https://dokgi88.github.io/purrfish/it/">
+<link rel="alternate" hreflang="ru" href="https://dokgi88.github.io/purrfish/ru/">
+<link rel="alternate" hreflang="tr" href="https://dokgi88.github.io/purrfish/tr/">
+<link rel="alternate" hreflang="id" href="https://dokgi88.github.io/purrfish/id/">
+<link rel="alternate" hreflang="th" href="https://dokgi88.github.io/purrfish/th/">
+<link rel="alternate" hreflang="vi" href="https://dokgi88.github.io/purrfish/vi/">
+<link rel="alternate" hreflang="x-default" href="https://dokgi88.github.io/purrfish/">
+
+<style>
+:root { --paper:#FFF4E0; --card:#FFFBF2; --ink:#3B2A3F; --soft:#7A6A80; --line:#E8D6B8; --accent:#E8743B; --btn:#3B2A3F; --btn-ink:#FFF4E0; }
+@media (prefers-color-scheme: dark) { :root { --paper:#1C1720; --card:#262029; --ink:#F2E8F2; --soft:#B5A6BA; --line:#3A3040; --accent:#F29A5E; --btn:#F2E8F2; --btn-ink:#1C1720; } }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Noto Sans", "Noto Sans KR", "Noto Sans Thai", sans-serif; }
+main { max-width:960px; margin:0 auto; padding:16px 16px 64px; }
+img, video { display:block; max-width:100%; }
+.px { image-rendering:pixelated; image-rendering:crisp-edges; }
+nav { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:13px; color:var(--soft); padding:4px 0 12px; }
+nav a { color:inherit; text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; text-decoration:underline; }
+.hero { border-radius:20px; overflow:hidden; border:1px solid var(--line); aspect-ratio:3840/1646; background:#9ad7f0; }
+.hero img { width:100%; height:100%; object-fit:cover; }
+.head { display:flex; gap:16px; align-items:center; margin:20px 0 8px; }
+.icon { width:88px; height:88px; border-radius:22px; flex:none; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+h1 { font-size:28px; line-height:1.2; margin:0; } .sub { color:var(--soft); margin:2px 0 0; font-size:17px; }
+.promo { font-size:18px; margin:12px 0 16px; }
+.get { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 28px; }
+.get a { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:14px; background:var(--btn); color:var(--btn-ink); text-decoration:none; font-weight:600; font-size:16px; }
+.get svg { width:20px; height:20px; fill:currentColor; }
+.show { display:grid; grid-template-columns:minmax(0, 300px) minmax(0, 1fr); gap:20px; align-items:start; }
+.show video { width:100%; border-radius:18px; border:1px solid var(--line); background:#000; aspect-ratio:9/16; }
+.strip { display:flex; align-items:flex-start; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+.strip img { flex:none; width:auto; height:min(520px, 120vw); aspect-ratio:1/2; border-radius:14px; border:1px solid var(--line); scroll-snap-align:start; background:var(--card); }
+.intro { margin:28px 0 8px; font-size:17px; }
+.feat { list-style:none; padding:0; margin:16px 0; display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; }
+.feat li { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 16px; }
+.feat b { display:block; color:var(--accent); margin-bottom:2px; }
+.end p { margin:10px 0; }
+footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; display:flex; flex-wrap:wrap; gap:6px 18px; }
+footer a { color:inherit; }
+@media (max-width:640px) { .show { grid-template-columns:1fr; } .show video { max-width:300px; margin:0 auto; } h1 { font-size:24px; } .icon { width:72px; height:72px; border-radius:18px; } }
+</style>
+</head>
+<body>
+<main>
+<!-- tools/site_pages.py 가 docs/store.md 에서 굽는다 — 손으로 고치지 않는다 -->
+<nav><a href="https://dokgi88.github.io/purrfish/">English</a> <a href="https://dokgi88.github.io/purrfish/ko/">한국어</a> <a href="https://dokgi88.github.io/purrfish/ja/">日本語</a> <a href="https://dokgi88.github.io/purrfish/zh-cn/">简体中文</a> <a href="https://dokgi88.github.io/purrfish/zh-tw/">繁體中文</a> <a href="https://dokgi88.github.io/purrfish/es/" aria-current="page">Español</a> <a href="https://dokgi88.github.io/purrfish/pt-br/">Português (Brasil)</a> <a href="https://dokgi88.github.io/purrfish/fr/">Français</a> <a href="https://dokgi88.github.io/purrfish/de/">Deutsch</a> <a href="https://dokgi88.github.io/purrfish/it/">Italiano</a> <a href="https://dokgi88.github.io/purrfish/ru/">Русский</a> <a href="https://dokgi88.github.io/purrfish/tr/">Türkçe</a> <a href="https://dokgi88.github.io/purrfish/id/">Bahasa Indonesia</a> <a href="https://dokgi88.github.io/purrfish/th/">ไทย</a> <a href="https://dokgi88.github.io/purrfish/vi/">Tiếng Việt</a></nav>
+<div class="hero"><img class="px" src="../img/es/header.png" alt="Miaupesca: Pesca gatuna" width="1920" height="823"></div>
+<div class="head"><img class="icon" src="../img/icon.png" alt="" width="256" height="256"><div><h1>Miaupesca: Pesca gatuna</h1><p class="sub">Pesca relajante con gatos</p></div></div>
+<p class="promo">¡Toma tu caña y tu traje de buceo! Pesca 120 especies, bucea para fotografiar la vida marina y conoce raros gatos sirena.</p>
+<div class="get"><a href="https://apps.apple.com/app/id6826563853"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.3-3.3zM14 5.2c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg> App Store</a><a href="https://play.google.com/store/apps/details?id=com.dokgi88.whiskerwaters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19c0 .4.4.7.8.5l16.3-9.5c.4-.2.4-.8 0-1L4.8 2c-.4-.2-.8.1-.8.5z"/></svg> Google Play</a></div>
+<div class="show"><video src="../video/en.mp4" poster="../img/en/poster.png" controls muted playsinline loop preload="none"></video><div class="strip"><img class="px" src="../img/es/1.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/es/3.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/es/2.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/es/4.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/es/5.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/es/6.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/es/7.png" alt="" loading="lazy" width="540" height="1080"></div></div>
+<div class="intro"><p>¡Coge la caña, gatito! El agua está llena de sorpresas.</p>
+<p>Miaupesca es un juego de pesca acogedor en pixel art que se juega con un solo dedo. Lanza el sedal, guía el cebo hacia los peces que ves nadar y súbelos con una barra de captura de lo más satisfactoria.</p></div>
+<ul class="feat"><li><b>Pesca con un dedo</b>mantén para lanzar, desliza para mover el cebo, mantén para recoger. Toca justo cuando se hunda el corcho para empezar con ventaja (opcional), con ondas, salpicaduras, vibración y monedas que vuelan a tu bolsa</li>
+<li><b>120 especies en 10 lugares</b>Estanque del prado, Río de montaña, Mar soleado, Arrecife de coral, Lago helado, El Abismo, el Templo Sumergido, el Lago de las Nubes, la Isla Volcán y el Manglar</li>
+<li>Busca peces dorados, bancos de peces raros y leyendas como la Carpa lunar o la Ballena estelar, y enfréntate una vez al día al gran Señor de cada lugar</li>
+<li><b>Buceo</b>ponte el traje, nada en cada lugar para fotografiar criaturas que no se pescan y llena tu Álbum de fotos. Con la linterna encontrarás cuevas profundas ocultas</li>
+<li><b>Gatos sirena</b>en cada lugar vive un gato sirena, más raro que cualquier leyenda. Llévalo a tu acuario o suéltalo para recibir una bendición de suerte</li>
+<li><b>25 señuelos en 5 niveles</b>los mejores atraen peces más raros, hay señuelos especiales para sirenas y leyendas, ¡y un pez muy fuerte puede romper tu sedal!</li>
+<li><b>Un cielo vivo</b>el día y la noche siguen tu reloj, la lluvia, la nieve y los arcoíris cambian la pesca, y las estrellas fugaces dan perlas al tocarlas, y las estaciones y la luna real cambian el paisaje. Cada zona muestra el pronóstico de 6 horas y unas ondas doradas marcan dónde pican los grandes</li>
+<li><b>Pecedex</b>muchos peces tienen su momento favorito (noche, lluvia, amanecer o estación), tus mayores capturas ganan Coronas de oro y cada primera captura recuerda su cielo: hora, tiempo, estación y lugar</li>
+<li><b>Acuario</b>tus peces ganan monedas incluso cuando no juegas. Decóralo con un Barco hundido, un Arco de coral y más, completa conjuntos para ganar extra, comparte Diseños del acuario con un código corto y toca un pez para ver dónde lo pescaste y cuántos días lleváis juntos</li>
+<li><b>Vida gatuna y colección</b>sombreros del Gorro de rana a la Corona, pelajes, gorros de temporada y un acogedor Rincón del gato. Manda a un gato de tu familia a un Viaje gatuno de 3 horas a por postales pixeladas y lee su Diario gatuno al volver</li>
+<li><b>Vecinos y fiestas</b>los gatos vecinos visitan tu acuario y dejan recuerdos, y la Amistad trae frases nuevas, pequeños regalos y un sombrero de amistad. Torneo semanal, Pesca en grupo cada mes, el Pez visitante de la semana y 5 fiestas al año (Cerezo, Verano, Halloween, Navidad y Año Nuevo) con sellos para decoración exclusiva que se queda para siempre</li>
+<li>Lee las cartas en botella del Capitán Bigotes, un viejo gato farero, y ayúdale a restaurar su faro paso a paso</li>
+<li><b>Progresa a tu ritmo</b>mejora Caña, Carrete, Sedal, Cebo y Pecera, crea cebo con un pez pescado para atraer a esa especie (salvo los legendarios), y disfruta de Misiones diarias, Regalo diario (si faltas un día, no pierdes nada) y regalos por los días juntos</li>
+<li><b>Extras acogedores</b>la vista de paisaje oculta los botones para que solo contemples el paisaje, el Diario de pesca guarda un Álbum de fotos con tus últimas 12 fotos del acuario y del Rincón del gato, y cada día un amiguito se esconde en el paisaje a cambio de perlas</li>
+<li>Juega sin conexión, cuando quieras</li></ul>
+<div class="end"><p>Gratis para jugar. Compras opcionales: packs de Perlas, Pack de inicio y Pack Mecenas (recompensas sin ver anuncios, sombrero Corona y el doble de límite de ganancias sin conexión). Puedes pescar las 120 especies sin gastar nada.</p>
+<p>Sin anuncios obligatorios ni banners. Los anuncios son recompensas opcionales que tú eliges ver, como vender una captura por el doble.</p>
+<p>¡Relájate, lanza el sedal y descubre qué pica hoy!</p></div>
+<div class="get"><a href="https://apps.apple.com/app/id6826563853"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.3-3.3zM14 5.2c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg> App Store</a><a href="https://play.google.com/store/apps/details?id=com.dokgi88.whiskerwaters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19c0 .4.4.7.8.5l16.3-9.5c.4-.2.4-.8 0-1L4.8 2c-.4-.2-.8.1-.8.5z"/></svg> Google Play</a></div>
+<footer><a href="https://dokgi88.github.io/purrfish-privacy/es/">Política de privacidad</a><a href="mailto:yeoreum.void@gmail.com">yeoreum.void@gmail.com</a><span>© 2026 Yeoreum</span></footer>
+</main>
+</body>
+</html>

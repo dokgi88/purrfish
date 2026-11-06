@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>にゃん釣り：ドット釣り＆水族館 — ねこのほっこりドット釣り</title>
+<meta name="description" content="指1本で遊べるドット絵ねこ釣りゲーム！120種の魚を釣って図鑑と水族館を完成させよう。">
+<meta property="og:title" content="にゃん釣り：ドット釣り＆水族館 — ねこのほっこりドット釣り">
+<meta property="og:description" content="指1本で遊べるドット絵ねこ釣りゲーム！120種の魚を釣って図鑑と水族館を完成させよう。">
+<meta property="og:image" content="https://dokgi88.github.io/purrfish/img/ja/header.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6826563853">
+<link rel="icon" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<link rel="alternate" hreflang="en" href="https://dokgi88.github.io/purrfish/">
+<link rel="alternate" hreflang="ko" href="https://dokgi88.github.io/purrfish/ko/">
+<link rel="alternate" hreflang="ja" href="https://dokgi88.github.io/purrfish/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dokgi88.github.io/purrfish/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dokgi88.github.io/purrfish/zh-tw/">
+<link rel="alternate" hreflang="es" href="https://dokgi88.github.io/purrfish/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://dokgi88.github.io/purrfish/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://dokgi88.github.io/purrfish/fr/">
+<link rel="alternate" hreflang="de" href="https://dokgi88.github.io/purrfish/de/">
+<link rel="alternate" hreflang="it" href="https://dokgi88.github.io/purrfish/it/">
+<link rel="alternate" hreflang="ru" href="https://dokgi88.github.io/purrfish/ru/">
+<link rel="alternate" hreflang="tr" href="https://dokgi88.github.io/purrfish/tr/">
+<link rel="alternate" hreflang="id" href="https://dokgi88.github.io/purrfish/id/">
+<link rel="alternate" hreflang="th" href="https://dokgi88.github.io/purrfish/th/">
+<link rel="alternate" hreflang="vi" href="https://dokgi88.github.io/purrfish/vi/">
+<link rel="alternate" hreflang="x-default" href="https://dokgi88.github.io/purrfish/">
+
+<style>
+:root { --paper:#FFF4E0; --card:#FFFBF2; --ink:#3B2A3F; --soft:#7A6A80; --line:#E8D6B8; --accent:#E8743B; --btn:#3B2A3F; --btn-ink:#FFF4E0; }
+@media (prefers-color-scheme: dark) { :root { --paper:#1C1720; --card:#262029; --ink:#F2E8F2; --soft:#B5A6BA; --line:#3A3040; --accent:#F29A5E; --btn:#F2E8F2; --btn-ink:#1C1720; } }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Noto Sans", "Noto Sans KR", "Noto Sans Thai", sans-serif; }
+main { max-width:960px; margin:0 auto; padding:16px 16px 64px; }
+img, video { display:block; max-width:100%; }
+.px { image-rendering:pixelated; image-rendering:crisp-edges; }
+nav { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:13px; color:var(--soft); padding:4px 0 12px; }
+nav a { color:inherit; text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; text-decoration:underline; }
+.hero { border-radius:20px; overflow:hidden; border:1px solid var(--line); aspect-ratio:3840/1646; background:#9ad7f0; }
+.hero img { width:100%; height:100%; object-fit:cover; }
+.head { display:flex; gap:16px; align-items:center; margin:20px 0 8px; }
+.icon { width:88px; height:88px; border-radius:22px; flex:none; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+h1 { font-size:28px; line-height:1.2; margin:0; } .sub { color:var(--soft); margin:2px 0 0; font-size:17px; }
+.promo { font-size:18px; margin:12px 0 16px; }
+.get { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 28px; }
+.get a { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:14px; background:var(--btn); color:var(--btn-ink); text-decoration:none; font-weight:600; font-size:16px; }
+.get svg { width:20px; height:20px; fill:currentColor; }
+.show { display:grid; grid-template-columns:minmax(0, 300px) minmax(0, 1fr); gap:20px; align-items:start; }
+.show video { width:100%; border-radius:18px; border:1px solid var(--line); background:#000; aspect-ratio:9/16; }
+.strip { display:flex; align-items:flex-start; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+.strip img { flex:none; width:auto; height:min(520px, 120vw); aspect-ratio:1/2; border-radius:14px; border:1px solid var(--line); scroll-snap-align:start; background:var(--card); }
+.intro { margin:28px 0 8px; font-size:17px; }
+.feat { list-style:none; padding:0; margin:16px 0; display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; }
+.feat li { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 16px; }
+.feat b { display:block; color:var(--accent); margin-bottom:2px; }
+.end p { margin:10px 0; }
+footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; display:flex; flex-wrap:wrap; gap:6px 18px; }
+footer a { color:inherit; }
+@media (max-width:640px) { .show { grid-template-columns:1fr; } .show video { max-width:300px; margin:0 auto; } h1 { font-size:24px; } .icon { width:72px; height:72px; border-radius:18px; } }
+</style>
+</head>
+<body>
+<main>
+<!-- tools/site_pages.py 가 docs/store.md 에서 굽는다 — 손으로 고치지 않는다 -->
+<nav><a href="https://dokgi88.github.io/purrfish/">English</a> <a href="https://dokgi88.github.io/purrfish/ko/">한국어</a> <a href="https://dokgi88.github.io/purrfish/ja/" aria-current="page">日本語</a> <a href="https://dokgi88.github.io/purrfish/zh-cn/">简体中文</a> <a href="https://dokgi88.github.io/purrfish/zh-tw/">繁體中文</a> <a href="https://dokgi88.github.io/purrfish/es/">Español</a> <a href="https://dokgi88.github.io/purrfish/pt-br/">Português (Brasil)</a> <a href="https://dokgi88.github.io/purrfish/fr/">Français</a> <a href="https://dokgi88.github.io/purrfish/de/">Deutsch</a> <a href="https://dokgi88.github.io/purrfish/it/">Italiano</a> <a href="https://dokgi88.github.io/purrfish/ru/">Русский</a> <a href="https://dokgi88.github.io/purrfish/tr/">Türkçe</a> <a href="https://dokgi88.github.io/purrfish/id/">Bahasa Indonesia</a> <a href="https://dokgi88.github.io/purrfish/th/">ไทย</a> <a href="https://dokgi88.github.io/purrfish/vi/">Tiếng Việt</a></nav>
+<div class="hero"><img class="px" src="../img/ja/header.png" alt="にゃん釣り：ドット釣り＆水族館" width="1920" height="823"></div>
+<div class="head"><img class="icon" src="../img/icon.png" alt="" width="256" height="256"><div><h1>にゃん釣り：ドット釣り＆水族館</h1><p class="sub">ねこのほっこりドット釣り</p></div></div>
+<p class="promo">釣りざおとウェットスーツを持って出発！120種の魚を釣り、海に潜って生きものを撮影し、伝説よりレアなねこ人魚に会おう。</p>
+<div class="get"><a href="https://apps.apple.com/app/id6826563853"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.3-3.3zM14 5.2c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg> App Store</a><a href="https://play.google.com/store/apps/details?id=com.dokgi88.whiskerwaters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19c0 .4.4.7.8.5l16.3-9.5c.4-.2.4-.8 0-1L4.8 2c-.4-.2-.8.1-.8.5z"/></svg> Google Play</a></div>
+<div class="show"><video src="../video/ja.mp4" poster="../img/ja/poster.png" controls muted playsinline loop preload="none"></video><div class="strip"><img class="px" src="../img/ja/1.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/ja/3.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/ja/2.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/ja/4.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/ja/5.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/ja/6.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="../img/ja/7.png" alt="" loading="lazy" width="540" height="1080"></div></div>
+<div class="intro"><p>ねこと一緒に、ほっこり釣りの旅へ出かけよう！</p>
+<p>にゃん釣りは、指1本で遊べるかわいいドット絵の釣りゲーム。長押しで投げて、水の中に見える魚へルアーを動かし、キャッチバーで手ごたえたっぷりに釣り上げよう。</p></div>
+<ul class="feat"><li><b>片手でかんたん</b>長押しで投げる／左右にドラッグでエサを誘導／押してキャッチ。ウキが沈んだ瞬間にタップすればアワセ成功で好スタート（しなくてもOK）。広がる波紋、水しぶき、ブルッと振動、お財布へ飛んでいくコインも</li>
+<li><b>10の釣り場に120種の魚</b>草原の池、山の渓流、ひだまりの海、サンゴ礁、氷の湖、深海、沈んだ神殿、雲の湖、火山島、マングローブの森</li>
+<li>まれに出る金色の魚、レアな魚の群れ、ツキミゴイ・ホシクジラなどのレジェンド、1日1回現れる釣り場の巨大なヌシ</li>
+<li><b>ダイビング</b>ウェットスーツで各釣り場の海を泳ぎ、釣れない生きものを撮影してフォト図鑑に。ライトを照らして海底の奥に隠れた深場も探そう</li>
+<li><b>ねこ人魚</b>各釣り場に1匹ずつ、伝説よりレアなねこ人魚がいるよ。水族館に迎えるか、逃がして幸運の祝福をもらおう</li>
+<li><b>ルアー25種・5段階</b>いいルアーほどレアな魚が食いつき、人魚や伝説を呼ぶ特別なルアーも。強い魚と踏ん張りすぎると糸が切れることも！</li>
+<li><b>生きている空</b>時計に合わせて昼と夜が変わり、雨・雪・虹で釣れる魚も変わり、流れ星をタップすると真珠がもらえる。季節の景色と本物の月の満ち欠け、釣り場ごとの6時間先までの空模様、大物がかかりやすいキラキラ光る金色の波も</li>
+<li><b>図鑑</b>夜・雨・明け方・季節など、好きな時間がある魚を狙い撃ち。大物記録で金の王冠をゲット。初めて釣った日の空（時間・天気・季節・釣り場）も図鑑に残るよ</li>
+<li><b>水族館</b>入れた魚がアプリを閉じている間もコインを稼ぐ。沈没船やサンゴのアーチで飾って、水槽セットで収入アップ、水槽レイアウトは短いコードでシェア。魚をタップすると釣った場所・来た日・いっしょに過ごした日数が見られるよ</li>
+<li><b>ねことコレクション</b>カエルぼうしから王冠まで、毛色・季節の帽子、居心地のいいネコの居場所。家族のねこを3時間の旅に出すとドット絵はがきを持ち帰り、留守にするとネコ日記に一行残してくれる</li>
+<li><b>ご近所とおまつり</b>ご近所ネコが水族館に遊びに来ておみやげを置いていき、なかよしLv.が上がると新しいおしゃべり・小さな贈り物・なかよしのぼうしも。週間釣り大会、今月の「みんなで釣ろう」、今週のゲスト魚、毎年5つのおまつり（お花見・夏・ハロウィン・クリスマス・お正月）— スタンプをずっと残る限定の飾りと交換</li>
+<li>灯台守のヒゲ船長が流したビンの手紙を集めて、古い灯台を一緒に直そう</li>
+<li><b>自分のペースで成長</b>サオ、リール、ライン、エサ、水槽を強化。釣った魚からエサを作ってその魚を狙える（伝説の魚はのぞく）。今日の依頼と今日のプレゼント（1日休んでも最初に戻りません）、いっしょに過ごした日数の贈り物も</li>
+<li><b>ほっこりおまけ</b>ボタンを隠して景色だけをながめるモード、釣り日誌のアルバムに水族館・ネコの居場所の写真を最新12枚、1日1回景色にかくれる小さな子を見つけると真珠</li>
+<li>オフラインでいつでも遊べる</li></ul>
+<div class="end"><p>基本プレイ無料。真珠のパック、スターターパック、サポーターパック（広告なしで報酬・王冠の帽子・オフライン収入の上限2倍）は欲しいときだけ購入でき、お金を使わなくても120種すべて釣れます。</p>
+<p>強制広告もバナー広告もありません。広告は「売値2倍」など、見たいときだけ選べるリワード広告のみです。</p>
+<p>今日はどんな魚が釣れるかな？さっそく投げてみよう！</p></div>
+<div class="get"><a href="https://apps.apple.com/app/id6826563853"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.3-3.3zM14 5.2c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg> App Store</a><a href="https://play.google.com/store/apps/details?id=com.dokgi88.whiskerwaters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19c0 .4.4.7.8.5l16.3-9.5c.4-.2.4-.8 0-1L4.8 2c-.4-.2-.8.1-.8.5z"/></svg> Google Play</a></div>
+<footer><a href="https://dokgi88.github.io/purrfish-privacy/ja/">プライバシーポリシー</a><a href="mailto:yeoreum.void@gmail.com">yeoreum.void@gmail.com</a><span>© 2026 Yeoreum</span></footer>
+</main>
+</body>
+</html>

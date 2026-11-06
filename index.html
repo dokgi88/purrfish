@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Purrfish: Cozy Cat Fishing — Pixel Fishing &amp; Aquarium</title>
+<meta name="description" content="Cozy pixel cat fishing! Catch 120 fish, fill your Fishdex, grow an Aquarium.">
+<meta property="og:title" content="Purrfish: Cozy Cat Fishing — Pixel Fishing &amp; Aquarium">
+<meta property="og:description" content="Cozy pixel cat fishing! Catch 120 fish, fill your Fishdex, grow an Aquarium.">
+<meta property="og:image" content="https://dokgi88.github.io/purrfish/img/en/header.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6826563853">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="alternate" hreflang="en" href="https://dokgi88.github.io/purrfish/">
+<link rel="alternate" hreflang="ko" href="https://dokgi88.github.io/purrfish/ko/">
+<link rel="alternate" hreflang="ja" href="https://dokgi88.github.io/purrfish/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dokgi88.github.io/purrfish/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dokgi88.github.io/purrfish/zh-tw/">
+<link rel="alternate" hreflang="es" href="https://dokgi88.github.io/purrfish/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://dokgi88.github.io/purrfish/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://dokgi88.github.io/purrfish/fr/">
+<link rel="alternate" hreflang="de" href="https://dokgi88.github.io/purrfish/de/">
+<link rel="alternate" hreflang="it" href="https://dokgi88.github.io/purrfish/it/">
+<link rel="alternate" hreflang="ru" href="https://dokgi88.github.io/purrfish/ru/">
+<link rel="alternate" hreflang="tr" href="https://dokgi88.github.io/purrfish/tr/">
+<link rel="alternate" hreflang="id" href="https://dokgi88.github.io/purrfish/id/">
+<link rel="alternate" hreflang="th" href="https://dokgi88.github.io/purrfish/th/">
+<link rel="alternate" hreflang="vi" href="https://dokgi88.github.io/purrfish/vi/">
+<link rel="alternate" hreflang="x-default" href="https://dokgi88.github.io/purrfish/">
+<script>
+(function(){try{if(sessionStorage.getItem("lang-picked"))return;sessionStorage.setItem("lang-picked","1");}catch(e){}
+var t={"ko":"ko","ja":"ja","zh-hans":"zh-cn","zh-hant":"zh-tw","es":"es","pt-br":"pt-br","fr":"fr","de":"de","it":"it","ru":"ru","tr":"tr","id":"id","th":"th","vi":"vi"};var ls=navigator.languages||[navigator.language||""];
+for(var i=0;i<ls.length;i++){var l=(ls[i]||"").toLowerCase();if(l.indexOf("en")===0)return;
+var k=t[l]?l:(l.indexOf("zh")===0?(/(tw|hk|mo|hant)/.test(l)?"zh-hant":"zh-hans"):l.split("-")[0]);
+if(t[k]){location.replace(t[k]+"/");return;}}})();
+</script>
+<style>
+:root { --paper:#FFF4E0; --card:#FFFBF2; --ink:#3B2A3F; --soft:#7A6A80; --line:#E8D6B8; --accent:#E8743B; --btn:#3B2A3F; --btn-ink:#FFF4E0; }
+@media (prefers-color-scheme: dark) { :root { --paper:#1C1720; --card:#262029; --ink:#F2E8F2; --soft:#B5A6BA; --line:#3A3040; --accent:#F29A5E; --btn:#F2E8F2; --btn-ink:#1C1720; } }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Noto Sans", "Noto Sans KR", "Noto Sans Thai", sans-serif; }
+main { max-width:960px; margin:0 auto; padding:16px 16px 64px; }
+img, video { display:block; max-width:100%; }
+.px { image-rendering:pixelated; image-rendering:crisp-edges; }
+nav { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:13px; color:var(--soft); padding:4px 0 12px; }
+nav a { color:inherit; text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:600; text-decoration:underline; }
+.hero { border-radius:20px; overflow:hidden; border:1px solid var(--line); aspect-ratio:3840/1646; background:#9ad7f0; }
+.hero img { width:100%; height:100%; object-fit:cover; }
+.head { display:flex; gap:16px; align-items:center; margin:20px 0 8px; }
+.icon { width:88px; height:88px; border-radius:22px; flex:none; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+h1 { font-size:28px; line-height:1.2; margin:0; } .sub { color:var(--soft); margin:2px 0 0; font-size:17px; }
+.promo { font-size:18px; margin:12px 0 16px; }
+.get { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 28px; }
+.get a { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:14px; background:var(--btn); color:var(--btn-ink); text-decoration:none; font-weight:600; font-size:16px; }
+.get svg { width:20px; height:20px; fill:currentColor; }
+.show { display:grid; grid-template-columns:minmax(0, 300px) minmax(0, 1fr); gap:20px; align-items:start; }
+.show video { width:100%; border-radius:18px; border:1px solid var(--line); background:#000; aspect-ratio:9/16; }
+.strip { display:flex; align-items:flex-start; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
+.strip img { flex:none; width:auto; height:min(520px, 120vw); aspect-ratio:1/2; border-radius:14px; border:1px solid var(--line); scroll-snap-align:start; background:var(--card); }
+.intro { margin:28px 0 8px; font-size:17px; }
+.feat { list-style:none; padding:0; margin:16px 0; display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; }
+.feat li { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 16px; }
+.feat b { display:block; color:var(--accent); margin-bottom:2px; }
+.end p { margin:10px 0; }
+footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; display:flex; flex-wrap:wrap; gap:6px 18px; }
+footer a { color:inherit; }
+@media (max-width:640px) { .show { grid-template-columns:1fr; } .show video { max-width:300px; margin:0 auto; } h1 { font-size:24px; } .icon { width:72px; height:72px; border-radius:18px; } }
+</style>
+</head>
+<body>
+<main>
+<!-- tools/site_pages.py 가 docs/store.md 에서 굽는다 — 손으로 고치지 않는다 -->
+<nav><a href="https://dokgi88.github.io/purrfish/" aria-current="page">English</a> <a href="https://dokgi88.github.io/purrfish/ko/">한국어</a> <a href="https://dokgi88.github.io/purrfish/ja/">日本語</a> <a href="https://dokgi88.github.io/purrfish/zh-cn/">简体中文</a> <a href="https://dokgi88.github.io/purrfish/zh-tw/">繁體中文</a> <a href="https://dokgi88.github.io/purrfish/es/">Español</a> <a href="https://dokgi88.github.io/purrfish/pt-br/">Português (Brasil)</a> <a href="https://dokgi88.github.io/purrfish/fr/">Français</a> <a href="https://dokgi88.github.io/purrfish/de/">Deutsch</a> <a href="https://dokgi88.github.io/purrfish/it/">Italiano</a> <a href="https://dokgi88.github.io/purrfish/ru/">Русский</a> <a href="https://dokgi88.github.io/purrfish/tr/">Türkçe</a> <a href="https://dokgi88.github.io/purrfish/id/">Bahasa Indonesia</a> <a href="https://dokgi88.github.io/purrfish/th/">ไทย</a> <a href="https://dokgi88.github.io/purrfish/vi/">Tiếng Việt</a></nav>
+<div class="hero"><img class="px" src="img/en/header.png" alt="Purrfish: Cozy Cat Fishing" width="1920" height="823"></div>
+<div class="head"><img class="icon" src="img/icon.png" alt="" width="256" height="256"><div><h1>Purrfish: Cozy Cat Fishing</h1><p class="sub">Pixel Fishing &amp; Aquarium</p></div></div>
+<p class="promo">Grab your rod and your wetsuit! Fish 120 species, dive to photograph sea life and meet rare cat mermaids across 10 cozy spots.</p>
+<div class="get"><a href="https://apps.apple.com/app/id6826563853"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.3-3.3zM14 5.2c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg> App Store</a><a href="https://play.google.com/store/apps/details?id=com.dokgi88.whiskerwaters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19c0 .4.4.7.8.5l16.3-9.5c.4-.2.4-.8 0-1L4.8 2c-.4-.2-.8.1-.8.5z"/></svg> Google Play</a></div>
+<div class="show"><video src="video/en.mp4" poster="img/en/poster.png" controls muted playsinline loop preload="none"></video><div class="strip"><img class="px" src="img/en/1.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="img/en/3.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="img/en/2.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="img/en/4.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="img/en/5.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="img/en/6.png" alt="" loading="lazy" width="540" height="1080">
+<img class="px" src="img/en/7.png" alt="" loading="lazy" width="540" height="1080"></div></div>
+<div class="intro"><p>Grab your rod, little cat — the water is full of surprises!</p>
+<p>Purrfish is a cozy pixel-art fishing game you can play with one thumb. Cast your line, guide the lure toward the fish you can see swimming below, then reel them in with a satisfying catch bar.</p></div>
+<ul class="feat"><li><b>One-thumb fishing</b>hold to cast, drag to steer the lure, hold to reel. Tap the moment the bobber dips for a head start (optional), and enjoy ripples, splashes, gentle vibration and coins flying into your wallet</li>
+<li><b>120 species across 10 spots</b>Meadow Pond, Mountain River, Sunny Sea, Coral Reef, Frozen Lake, The Abyss, the Sunken Temple, Cloud Lake, Volcano Isle and the Mangrove Forest</li>
+<li>Hunt rare Golden fish, schools of rare fish and legends like the Moon Carp and the Star Whale, and battle each spot's giant Master once a day</li>
+<li><b>Dive &amp; discover</b>put on a wetsuit, swim each spot to photograph creatures you can't catch for your Photo Book, and find hidden deep caves with your flashlight</li>
+<li><b>Cat mermaids</b>one rare cat mermaid lives in each spot, rarer than any legend. Welcome her to your aquarium or set her free for a lucky blessing</li>
+<li><b>25 lures in 5 tiers</b>better lures tempt rarer fish, special lures call mermaids and legends, and a hard-fighting fish can even snap your line</li>
+<li><b>A living sky</b>day and night follow your clock, rain, snow and rainbows change what bites, shooting stars give pearls when tapped, and seasons and the real moon phase change the scenery. Each spot shows a 6-hour forecast, and sparkling golden ripples mark where big fish bite</li>
+<li><b>Fishdex</b>many fish have a favorite time (night, rain, dawn or a season), your biggest catches win Gold Crowns, and every first catch remembers its sky: time, weather, season and spot</li>
+<li><b>Aquarium</b>your fish earn coins even while you're away. Decorate with a Sunken Ship, Coral Arch and more, complete Tank Sets for bonus income, share Tank Layouts with a short code, and tap a fish to see where it was caught and how many days you've been together</li>
+<li><b>Cat life &amp; collection</b>hats from a Frog Hat to a Crown, fur colors, seasonal hats and a cozy Cat's Spot. Send a family cat on a 3-hour Cat Trip for pixel postcards, and read its Cat's Diary when you come back</li>
+<li><b>Neighbors &amp; festivals</b>neighbor cats visit your aquarium and leave souvenirs, and Friendship brings new lines, small gifts and a best-pal hat. Weekly Tournament, Monthly Group Catch goals, This Week's Visitor fish, and 5 festivals a year (Cherry Blossom, Summer, Halloween, Christmas, New Year) with stamps to trade for exclusive decor you keep forever</li>
+<li>Read bottle letters from Captain Whiskers, an old lighthouse-keeper cat, and help restore his lighthouse step by step</li>
+<li><b>Grow at your own pace</b>upgrade your Rod, Reel, Line, Bait and Tank, make bait from a catch to target that species (legends excepted), plus Daily Requests, a Daily Gift (miss a day and you keep your progress) and gifts for days together</li>
+<li><b>Cozy extras</b>Scenery view hides the buttons so you can just watch the landscape, the Fishing Journal keeps a Photo Album of your last 12 aquarium and Cat's Spot photos, and a little critter hides in the scenery each day for pearls</li>
+<li>Play offline, anytime</li></ul>
+<div class="end"><p>Free to play. Optional in-app purchases: Pearl packs, a Starter Pack and a Supporter Pack (ad rewards without watching ads, a Crown hat and double the offline earnings limit). You can catch all 120 fish without spending a thing.</p>
+<p>No forced ads and no banners. Ads are optional rewards you choose to watch, like selling a catch for double coins.</p>
+<p>Relax, cast your line, and see what's biting today!</p></div>
+<div class="get"><a href="https://apps.apple.com/app/id6826563853"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.6 1.2 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.3-3.3zM14 5.2c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg> App Store</a><a href="https://play.google.com/store/apps/details?id=com.dokgi88.whiskerwaters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19c0 .4.4.7.8.5l16.3-9.5c.4-.2.4-.8 0-1L4.8 2c-.4-.2-.8.1-.8.5z"/></svg> Google Play</a></div>
+<footer><a href="https://dokgi88.github.io/purrfish-privacy/">Privacy policy</a><a href="mailto:yeoreum.void@gmail.com">yeoreum.void@gmail.com</a><span>© 2026 Yeoreum</span></footer>
+</main>
+</body>
+</html>
